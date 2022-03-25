@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 920px;
+    margin: 0 auto;
+}
+
+/* Header section */
+header{
+    background-color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar-menu ul li{
+    margin-left: 15px;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.navbar .logo{
+    font-size: 20px;
+}
+.top-baner{
+    height: 540px;
+    background-image: url(../img/baner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.top-baner::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(253, 110, 110, 0.4);
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-weight: 100;
+}
+h2{
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-weight: 100;
+}
+.highlight{
+    background-color: rgba(255,255,255, 0.2);
+    display: inline-block;
+    padding: 2px 5px;
+}
+.button-block a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.baner-button{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    border: 3px solid white;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 14px;
+    transition: all 0.2 linear;
+}
+.baner-button:hover{
+    background: white;
+    color: red;
+}
+
+/* Section about */
+#about{
+    background-color: #ededed;
+    padding: 80px 0;
+    color: #696969;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    width: 30%;
+}
+.right-side{
+    width: 70%;
+}
+.left-side h3{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.right-side p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.my-skills{
+
+}
+.progress-bar{
+    margin-top: 15px;
+    width: 100%;
+    background-color: white;
+    height: 44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.progress-bar span{
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.progress-bar-fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d9d9d9;
+    height: 100%;
+    width: 100%;
+}
+.skill1 .progress-bar-fill{
+    width: 80%;
+    animation: skill1;
+    animation-duration: 4s;
+}
+.skill2 .progress-bar-fill{
+    width: 90%;
+    animation: skill2;
+    animation-duration: 4s;
+}
+.skill3 .progress-bar-fill{
+    width: 70%;
+    animation: skill3;
+    animation-duration: 4s;
+}
+.skill4 .progress-bar-fill{
+    width: 40%;
+    animation: skill4;
+    animation-duration: 4s;
+}
+/* Animation section */
+@keyframes skill1{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes skill2{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes skill3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes skill4{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 40%;
+    }
+}
+/* My projects */
+.project1{
+    width: 30%;
+    background-image: url(../img/IMAGE.png);
+    background-size: cover;
+}
+
+#footer{
+    background-color: rgb(224, 222, 222);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: c4c4c4;
+    font-size: 20px;
+}
+#footer .flex{
+    display: flex;
+    justify-content: space-between;
+}
+#footer a{
+    text-decoration: none;
+    color: #000;
+}
